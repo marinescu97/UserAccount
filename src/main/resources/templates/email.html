@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            font-size: 20px;
+        }
+        span{
+            font-weight: bold;
+        }
+        div{
+            border: 3px solid black;
+            padding: 10px;
+        }
+        p{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+<p>
+    <span>Subject: </span>
+    Welcome to {{appName}}! Your account has been created.
+</p>
+<div>
+    <p style="margin-bottom: 60px;">Hello {{firstName}},</p>
+    <p>We're excited to let you know that your account for {{appName}} has been successfully created!</p>
+    <p>You can check your account <a href="{{accountUrl}}">here</a>.</p>
+    <p>Our support team is here to assist you. You can reach out to us at {{emailAddress}} or visit our Help Center.</p>
+    <p>Thank you for choosing {{appName}}. We're thrilled to have you on board and can't wait to see what you'll achieve!</p>
+    <p style="margin: 50px 0 30px 10px;">Warm regards,<br> {{name}}</p>
+</div>
+</body>
+</html>
