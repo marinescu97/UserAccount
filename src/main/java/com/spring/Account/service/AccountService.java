@@ -32,4 +32,8 @@ public class AccountService {
     public Optional<Account> findById(UUID id) {
         return Optional.ofNullable(repository.findById(id));
     }
+
+    public void deleteAll() {
+        repository.deleteAll();
+    }
 }

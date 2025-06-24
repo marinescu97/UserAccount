@@ -18,4 +18,8 @@ public class AccountRepository {
     public Account findById(UUID id) {
         return accounts.get(id);
     }
+
+    public void deleteAll(){
+        accounts.clear();
+    }
 }
